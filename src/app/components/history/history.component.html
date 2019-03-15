@@ -1,0 +1,10 @@
+<p class="head">History</p>
+<div *ngFor="let user of UserList" class="history-block">
+  <div class="history-main">
+    <img [src]="user.avatar_url" alt="">
+    <div class="history-name-id">
+      <p class="history-name">Name: {{user.name}}</p>
+      <p class="history-id">ID: {{user.id}}</p>
+    </div>
+  </div>
+</div>

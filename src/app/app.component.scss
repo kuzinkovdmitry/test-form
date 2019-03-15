@@ -1,0 +1,17 @@
+.main-block {
+  width: 832px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: #EEEEEE;
+  border-radius: 6px;
+  app-search-request, app-history {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+  }
+  app-history {
+    border-left: 1px solid #F8F9FB;
+  }
+}

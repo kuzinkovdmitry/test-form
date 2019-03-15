@@ -1,0 +1,34 @@
+.head {
+  margin-top: 0;
+  font-size: 24px;
+  color: #202330;
+  text-align: center;
+}
+.history-block {
+  width: 96%;
+  border: none;
+  background-color: #F8F9FB;
+  font-size: 14px;
+  color: #202330;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+  .history-main {
+    display: flex;
+    flex-direction: row;
+    img {
+      height: 100px;
+      width: 100px;
+      border-radius: 6px;
+    }
+    .history-name-id {
+      display: flex;
+      flex: 1;
+      margin-left: 20px;
+      flex-direction: column;
+    }
+
+  }
+}

@@ -1,0 +1,23 @@
+.data-block {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  .user-avatar, .user-name-email {
+    display: flex;
+    flex: 1;
+  }
+  .user-avatar {
+    justify-content: center;
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+  .user-name-email {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.not-found-block {
+  margin-top: 20px;
+}
