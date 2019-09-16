@@ -1,0 +1,11 @@
+<p class="favorites__title">Favorites</p>
+<div class="favorites__item" *ngFor="let user of favorites$ | async">
+    <img class="favorites__item-avatar" [src]="user.owner.avatar_url" alt="">
+    <div class="favorites__item-info">
+      <p>Name: {{user.name}}</p>
+      <p>Project name: {{user.full_name}}</p>
+      <p>Project description: {{user.description}}</p>
+      <p>URL: {{user.url}}</p>
+      <p *ngIf="user.language">Language: {{user.language}}</p>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="projects-list__item" *ngFor="let project of projects$ | async">
+  <img class="projects-list__avatar" [src]="project.owner.avatar_url" alt="">
+  <p>Name: {{project.name}}</p>
+  <p>Project name: {{project.full_name}}</p>
+  <p>Project description: {{project.description}}</p>
+  <p>URL: {{project.url}}</p>
+  <p *ngIf="project.language">Language: {{project.language}}</p>
+  <button class="projects-list__favorite-button" (click)="addToFavorite(project)">Add to favorite</button>
+</div>

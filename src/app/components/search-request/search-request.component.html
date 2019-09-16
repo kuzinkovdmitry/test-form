@@ -1,2 +1,2 @@
-<app-form></app-form>
-<app-data></app-data>
+<app-form (selectedLang)="onSelectLang($event)"></app-form>
+<app-projects-list [currentLang]="selectedLang"></app-projects-list>

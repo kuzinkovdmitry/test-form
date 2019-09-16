@@ -1,25 +1,20 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import {Observable, Subject, throwError} from 'rxjs';
-import {catchError, map} from 'rxjs/operators';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class ApiService {
-  private URL = `https://api.github.com/users`;
-  public apiErrors = new Subject();
+  private URL = `https://api.github.com/search/repositories?q=`;
   constructor(private http: HttpClient) {}
 
   public getUserInfo(name): Observable<any> {
-    return this.http.get(`${this.URL}/${name}`)
+    return this.http.get(`${this.URL}${name}`)
       .pipe(
-        catchError(err => throwError(err)),
-        map(data => data),
+        map((data: any) => data.items)
       );
-  }
-  public sendHttpErrors(value: HttpErrorResponse, name: string) {
-    this.apiErrors.next({value, name});
   }
 }

@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-search-request',
   templateUrl: './search-request.component.html',
   styleUrls: ['./search-request.component.scss']
 })
-export class SearchRequestComponent implements OnInit {
+export class SearchRequestComponent {
+  selectedLang!: string;
 
-  constructor() { }
-
-  ngOnInit() {
+  onSelectLang(language: string) {
+    this.selectedLang = language;
   }
-
 }

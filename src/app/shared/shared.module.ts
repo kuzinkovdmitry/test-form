@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { DataComponent } from './components/data/data.component';
+import { ProjectsListComponent } from './components/projects-list/projects-list.component';
 import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
-  declarations: [DataComponent],
+  declarations: [ProjectsListComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -14,7 +14,7 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule
   ],
   exports: [
-    DataComponent,
+    ProjectsListComponent,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,

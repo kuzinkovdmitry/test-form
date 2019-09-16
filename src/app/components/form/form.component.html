@@ -1,1 +1,6 @@
-<input type="text" placeholder="Enter name" [formControl]="findControl" [(ngModel)]="name" #elementInp>
+<input class="form__search" type="text" placeholder="Enter name" #elementInp>
+<select class="form__select" name="lang" [formControl]="form.language">
+  <option *ngFor="let language of languages" [value]="language">
+      {{language}}
+  </option>
+</select>

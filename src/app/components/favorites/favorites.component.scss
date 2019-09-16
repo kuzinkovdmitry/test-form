@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+  padding: 20px;
+  border-left: 1px solid #F8F9FB;
+  overflow-y: auto;
+}
+
+.favorites {
+  &__title {
+    margin-top: 0;
+    font-size: 24px;
+    color: #202330;
+    text-align: center;
+  }
+
+  &__item {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #F8F9FB;
+    color: #202330;
+    font-size: 14px;
+
+    &-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 6px;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin-left: 20px;
+    }
+  }
+}
+

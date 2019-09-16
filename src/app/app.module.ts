@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponent } from './components/form/form.component';
-import { HistoryComponent } from './components/history/history.component';
+import { FavoritesComponent } from './components/favorites/favorites.component';
 import { SharedModule } from './shared/shared.module';
 import { SearchRequestComponent } from './components/search-request/search-request.component';
 
@@ -12,7 +12,7 @@ import { SearchRequestComponent } from './components/search-request/search-reque
   declarations: [
     AppComponent,
     FormComponent,
-    HistoryComponent,
+    FavoritesComponent,
     SearchRequestComponent
   ],
   imports: [

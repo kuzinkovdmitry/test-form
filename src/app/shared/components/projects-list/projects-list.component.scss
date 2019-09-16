@@ -1,0 +1,29 @@
+.projects-list {
+  &__item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid red;
+  }
+
+  &__avatar {
+    width: 50%;
+  }
+
+  &__favorite-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    background-color: #F8F9FB;
+    color: #000000;
+    cursor: pointer;
+  }
+}
